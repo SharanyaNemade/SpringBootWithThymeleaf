@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th = "http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Webpage Title</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+	<h2> Looping (th:each) </h2>
+    <p> Loop over colections to generate repeated HTML elements.</p>
+     
+    
+    <ul>
+    	<li th:each = "no : ${modelNumbers}">
+    		<span th:text = "${no}"></span>
+    	</li>
+    </ul>
+    
+    
+</body>
+</html>
+
+
+ 
